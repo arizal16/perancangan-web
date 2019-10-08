@@ -1,0 +1,88 @@
+.header{
+	border: 2px solid black;
+	background-color: #000000;
+	color: white;
+	margin-bottom: -40px;
+	/*height: px;*/
+}
+
+.container{
+	/*border: 2px solid black;*/
+	background-image: linear-gradient(to right, #e6ffcc, #f2ffe6);
+}
+
+.TukuJudul{
+	text-align: center;
+	font-family: 'Source Sans Pro', sans-serif;
+    letter-spacing: 6px;
+	font-weight: 900;
+	font-size: 40px;
+	margin-top: 120px;
+	color: #2e2e1f;
+	background-image: linear-gradient(to right, #ffeecc,#fff7e6);
+}
+
+ul a{
+	padding: 12px;
+	color: white;
+}
+
+ul{
+	position: relative;
+	margin-top: -60px;
+	margin-bottom: 70px;
+}
+.find{
+	margin-top: -40px;
+}
+
+.form1{
+	float: right;
+	margin-top: -90px;
+	/*padding : 5px 12px;*/
+}
+.cari{
+	text-align: center;
+	width: 200px;
+	margin-right: 40px;
+	/*padding : 2px 10px 2px ;  */
+	box-sizing: border-box;
+}
+
+.gambar{
+	margin: auto;
+	width: 879px;
+	/* border: 2px solid black; */
+}
+div.polaroid1 {
+	display: inline-block;
+	margin-right: 60px;
+	margin-top: 50px;
+	width: 250px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	text-align: center;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	letter-spacing: 1px;
+	background-image: linear-gradient(to right, #ffeecc,#fff7e6);
+  }
+  div.polaroid2 {
+	display: inline-block;
+	margin-top: 50px;
+	width: 250px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	text-align: center;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	letter-spacing: 1px;
+	background-image: linear-gradient(to right, #ffeecc,#fff7e6);
+  }
+
+  div.container {
+	padding: 10px;
+  }
+  .container .thumbnail{
+	  font-weight: bold;
+  }
