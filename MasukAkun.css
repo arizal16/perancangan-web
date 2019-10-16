@@ -1,0 +1,83 @@
+.header{
+	border: 2px solid black;
+	background-color: #000000;
+	color: white;
+	margin-bottom: -40px;
+	height: 110px;
+}
+.menu{
+	font-family: Berlin Sans FB;
+}
+.container{
+
+	background-image: linear-gradient(to right, #e6ffcc, #f2ffe6);
+}
+
+.TukuJudul{
+	text-align: center;
+	font-family: 'Source Sans Pro', sans-serif;
+    letter-spacing: 6px;
+	font-weight: 900;
+	font-size: 40px;
+	margin-top: 120px;
+	color: #2e2e1f;
+	background-image: linear-gradient(to right, #ffeecc,#fff7e6);
+}
+
+ul a{
+	padding: 12px;
+	color: white;
+}
+
+ul{
+	position: relative;
+	margin-top: -60px;
+	margin-bottom: 70px;
+}
+.find{
+	margin-top: -40px;
+	font-family: Freestyle Script;
+}
+
+.produk,.ribuan,.gratis{
+	display: inline-block;
+	padding:25px;
+	font-family: Maiandra GD;
+}
+
+.form1{
+	float: right;
+	margin-top: -90px;
+
+}
+
+.form2{
+	background-color:  #e6e6ff;
+	width: 800px;
+	height: 250px;
+}
+
+.cari{
+	text-align: center;
+	width: 200px;
+	margin-right: 40px;
+	
+	box-sizing: border-box;
+}
+
+.ButtonBawah{
+	margin: auto;
+	margin-top: 100px;
+	width: 500px;
+	height: 200px;
+
+}
+.ButtonBawah ul a{
+	
+	display: inline;
+	font-family: Consolas;
+	font-size: 20px;
+	color: black;
+	margin-left: -25px;
+	padding: 35px;
+}
