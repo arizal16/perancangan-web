@@ -3,12 +3,15 @@
 	background-color: #000000;
 	color: white;
 	margin-bottom: -40px;
-	/*height: px;*/
+	height: 110px;
 }
-
+.menu{
+	font-family: Berlin Sans FB;
+}
 .container{
 	/*border: 2px solid black;*/
 	background-image: linear-gradient(to right, #e6ffcc, #f2ffe6);
+	font-family: MV Boli;
 }
 
 .TukuJudul{
@@ -32,15 +35,30 @@ ul{
 	margin-top: -60px;
 	margin-bottom: 70px;
 }
+
+
 .find{
 	margin-top: -40px;
+	font-family: Freestyle Script;
+}
+
+.produk,.ribuan,.gratis{
+	display: inline-block;
+	padding:25px;
+	font-family: Maiandra GD;
+}
+
+.produk,.ribuan,.gratis{
+	display: inline-block;
+	padding:25px;
+	font-family: Maiandra GD;
 }
 
 .form1{
 	float: right;
 	margin-top: -90px;
-	/*padding : 5px 12px;*/
 }
+
 .cari{
 	text-align: center;
 	width: 200px;
@@ -51,8 +69,8 @@ ul{
 
 .gambar{
 	margin: auto;
-	width: 879px;
-	/* border: 2px solid black; */
+	width: 900px;
+	 /*border: 2px solid black; */
 }
 div.polaroid1 {
 	display: inline-block;
@@ -86,3 +104,19 @@ div.polaroid1 {
   .container .thumbnail{
 	  font-weight: bold;
   }
+.ButtonBawah{
+	margin-top: 100px;
+	width: 500px;
+	height: 200px;
+	margin: auto;
+
+}
+.ButtonBawah ul a{
+	/*margin: auto;*/
+	display: inline;
+	font-family: Consolas;
+	font-size: 20px;
+	color: black;
+	margin-left: 10px;
+	
+}
