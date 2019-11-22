@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Upload Barang</title>
+	<link rel="stylesheet" type="text/css" href="Upload.css">
+	<li><a href="responsive.css"></a></li>
+</head>
+<body>
+<div class="header">
+<center>
+		<div class="menu">
+			<h1>TUKU-TUKU</h1>
+			<br>
+			<h1 class="find">Find your own style!</h1>
+			</center>
+			<ul>
+				<a href="">PRIA</a></li>
+				<a href="">WANITA</a></li>
+				<a href="">ANAK-ANAK</a></li>
+			</ul>
+		
+		
+			<form class="form10">
+				<input class="cari" type="text" name="cari" placeholder="Cari produk, tren , dan merek">
+				</form>
+			</div>
+<center>
+			<div class ="Logo3">
+	<h3 class="produk"> PRODUK ORIGINAL</h3>
+	<h3 class="ribuan"> RIBUAN PRODUK FASHION</h3>
+	<h3 class="gratis"> GRATIS PENGEMBALIAN</h3>
+	</center>
+
+	<center>
+		<br>
+		<div class="isi">
+			<form class="form1">
+				Nama Barang <br>
+				<input type="text" name="Nama Barang" placeholder="Nama Barang"><br>
+				<br>
+			<form class="form7">
+				Jenis Barang <br>
+				<input type="text" name="Jenis Barang" placeholder="Jenis Barang"><br>
+				<br>
+				</form>
+			<form class="form2">
+				Harga Barang <br>
+				<input type="text" name="Harga" placeholder="Rp."><br>
+				<br>
+			<form class="form3">
+				Produksi <br>
+				<input type="text" name="Negara" placeholder="Negara"><br>
+			</form>
+			<br>
+			<form class="form4">
+				Jumlah Stok: <br>
+				<input type="number" placeholder="0"><br>
+			</form>
+			<br>
+			<form class="form5">
+				Kategori Produk: <br>
+				<input type="radio" name="jeniskelamin">Pria
+				<input type="radio" name="jeniskelamin">Wanita
+				<input type="radio" name="jeniskelamin">Anak-Anak<br>
+			</form>
+			<br>
+			<form class="form8">
+				<div class="file--upload">
+                <label class="color--blue-2">Upload Gambar </label> <br>
+                <input type="file" class="form--input-blue-2">
+              </div><br>
+			</form>
+			<br>
+			<form class="form6">
+				Tanggal Produksi: <br>
+				<input type="date">
+				<br>
+				<br>
+				<input type="radio" name="setuju">Simpan data yang dimasukkan
+			</form>
+			<br>
+			<form class="button">
+				<input type="button" name="Simpan" value="Simpan">
+				<input type="button" name="Batal" value="Batal">
+			</form>
+			<br>
+		</center>
+		</div>
+	</div>
+
+	<script type="text/javascript"  src="jquery.min.js"></script>
+
+	<script type="text/javascript">
+  function readURL(input) {
+    if (input.files && input.files[0]) {
+      var reader = new FileReader();
+      reader.onload = function(e) {
+        $('.image--preview').attr('src', e.target.result);
+      }
+      $('.image--type').html(input.files[0].type);
+      $('.image--name').html(input.files[0].name);
+      $('.image--size').html(input.files[0].size);
+      if (input.files[0].size > 1048576) {
+        $('.foto--error').remove();
+        $('.image--detail-all').remove();
+        $('.file--upload input').val('');
+        $('.file--upload').append('<p  class="foto--error" style="color:red">Ukuran tidak boleh lebih dari 1 mb</p>');
+        console.log('lebih dari 1mb');
+      }else{
+        if (input.files[0].type == 'image/png' || input.files[0].type == 'image/jpg' || input.files[0].type == 'image/jpeg' ) {
+          console.log('bener sihhh');
+          $('.foto--error').remove();
+        } else {
+          console.log('salah');
+          $('.foto--error').remove();
+          $('.image--detail-all').remove();
+          $('.file--upload input').val('');
+          $('.file--upload').append('<p class="foto--error" style="color:red">Hanya untuk upload foto dengan format jpg, jpeg dan png</p>');
+        }
+      }
+      reader.readAsDataURL(input.files[0]);
+    }
+  }
+  $.fn.uploadGambar = function () {
+    this.append(`
+      <div class="grid-row image--detail-all">
+      <div class="grid-item-6">
+      <img class="image--preview" style="width:100px;hight:100px;" src="Resources/img/beach-calm-clouds-457882.jpg" alt="">
+      </div>
+      <div class="grid-item-6">
+      <ul class="ul__list" style="position: inherit;
+margin-top: 0;
+margin-bottom: 0;">
+      <li>Nama foto : <span class="image--name"></span></li>
+      <li>Size : <span class="image--size"></span></li>
+      <li>type : <span class="image--type"></span></li>
+      </ul>
+      </div>
+      </div>
+      `);
+  }
+  $('.file--upload input').change(function () {
+    $('.image--detail-all').remove();
+    $('.file--upload').uploadGambar();
+    readURL(this);
+  });
+</script>
+
+</body>
+</html>

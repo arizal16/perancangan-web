@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <html>
-<link rel="stylesheet" type="text/css" href="MasukAkun.css">
 <head>
-<script>
+<link rel="stylesheet" type="text/css" href="MasukAkun.css">
+<li><a href="responsive.css"></a></li>
+<script src="Login.js"></script>
+
+<!-- <script>
 function validateForm() {
   var x = document.forms["form2"]["username"]["password"].value;
   if (x == "") {
@@ -10,7 +13,7 @@ function validateForm() {
     return false;
   }
 }
-</script>
+</script> -->
 	<title>Masuk Akun</title>
 </head>
 <body>
@@ -23,15 +26,23 @@ function validateForm() {
 			<h1 class="find">Find your own style!</h1>
 			</center>
 			<ul>
-				<a href="">PRIA</a></li>
-				<a href="">WANITA</a></li>
-				<a href="">ANAK-ANAK</a></li>
+			<!-- 	<a href="">PRIA</a>
+				<a href="">WANITA</a>
+				<a href="">ANAK-ANAK</a> -->
+	<div class="dropdown" style="margin-right: 25px;">
+  <button onclick="myFunction()" class="dropbtn">Halo 1</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="index.html">Halaman Awal</a>
+    <a href="Registrasi.html">Registrasi</a>
+    <a href="About.html">Tentang</a>
+  </div>
+</div>
 			</ul>
 		
 		
-			<form class="form1">
+			<!-- <form class="form1" >
 				<input class="cari" type="text" name="cari" placeholder="Cari produk, tren , dan merek">
-				</form>
+				</form> -->
 			</div>
 <br>
 <br>
@@ -44,7 +55,8 @@ function validateForm() {
 </center>
 
 <center>
-<form name="form2" action="Catalouge.html" onsubmit="return validateForm()" method="post">
+<form class ="form2" name ="form" action="Catalouge.html" onsubmit="return validasi()" method="post">
+<!-- <form class="login-form2" name="formlogin"></form> -->
 				<h1>Masuk Akun:</h1>
 				<br>
 				<input type="text" name="username" placeholder="Email"><br>
@@ -59,13 +71,34 @@ function validateForm() {
 			</center>
 			<br>
 
-<div class="ButtonBawah">
+<!-- <div class="ButtonBawah">
 		<ul>
 			<a href="index.html">Halaman Awal</a></li>
 			<a href="About.html">About</a></li>
 			<a href="Registrasi.html">Registrasi</a></li>
 		</ul>
-	</div>
+	</div> -->
 		
 </body>
 </html>
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>

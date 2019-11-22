@@ -13,6 +13,10 @@
 	background-image: linear-gradient(to right, #e6ffcc, #f2ffe6);
 }
 
+.RealTree{
+	background-image: linear-gradient(to right, #e6ffcc, #f2ffe6);
+}
+
 .TukuJudul{
 	text-align: center;
 	font-family: 'Source Sans Pro', sans-serif;
@@ -45,60 +49,12 @@ ul{
 	font-family: Maiandra GD;
 }
 
-.form1{
+.form10{
 	float: right;
 	margin-top: -90px;
 
 }
-
-.form2{
-	background-color: #e6e6e6;
-	width: 800px;
-	height: 250px;
-}
-
-.cari{
-	text-align: center;
-	width: 200px;
-	margin-right: 40px;
-	
-	box-sizing: border-box;
-}
-
-.kotakgambar{
-	width: 900px;
-	margin: auto; 
-}
-
-.gambar{
-	padding: 20px;
-}
-
-.ButtonBawah{
-	margin-top: 100px;
-	width: 500px;
-	height: 200px;
-	margin: auto;
-
-}
-.ButtonBawah ul a{
-	display: inline;
-	font-family: Maiandra GD;
+.thumbnail{
+	font-family: Tw Cen MT;
 	font-size: 20px;
-	color: black;
-	margin-left: 25px;
 }
-
-/*@media only screen and (max-width: 500px){
-.header ul #list li{
-width:100%;
-display: inline-block;
-float:left;
-}
-.header ul #list{
-
-}
-.header .form1{
-
-}
-}*/

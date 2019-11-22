@@ -1,3 +1,7 @@
+html, body{
+	padding :0;
+	margin: 0;
+}
 .header{
 	border: 2px solid black;
 	background-color: #000000;
@@ -31,7 +35,7 @@ ul a{
 
 ul{
 	position: relative;
-	margin-top: -60px;
+	margin-top: -75px;
 	margin-bottom: 70px;
 }
 .find{
@@ -52,7 +56,7 @@ ul{
 }
 
 .form2{
-	background-color:  #e6e6ff;
+background-image: linear-gradient(to right, #ffeecc,#fff7e6);
 	width: 800px;
 	height: 250px;
 }
@@ -75,9 +79,47 @@ ul{
 .ButtonBawah ul a{
 	
 	display: inline;
-	font-family: Consolas;
+	font-family: Maiandra GD;
 	font-size: 20px;
 	color: black;
 	margin-left: -25px;
 	padding: 35px;
 }
+
+.dropbtn {
+  background-color: transparent;
+  color: white;
+  padding: -1px;
+  font-size: 22px;
+  border: none;
+  cursor: pointer;
+  font-family: Times New Roman;
+
+}
+
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}

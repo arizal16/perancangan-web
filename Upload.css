@@ -45,16 +45,22 @@ ul{
 	font-family: Maiandra GD;
 }
 
-.form1{
+.form10{
 	float: right;
 	margin-top: -90px;
 
 }
 
-.form2{
+/*.form2{
 	background-color: #e6e6e6;
 	width: 800px;
 	height: 250px;
+}*/
+
+.isi{
+	background-color: #ffe6e6;
+	width: 800px;
+	height: 700px;
 }
 
 .cari{
@@ -65,40 +71,19 @@ ul{
 	box-sizing: border-box;
 }
 
-.kotakgambar{
-	width: 900px;
-	margin: auto; 
-}
-
-.gambar{
-	padding: 20px;
-}
-
 .ButtonBawah{
-	margin-top: 100px;
-	width: 500px;
-	height: 200px;
 	margin: auto;
+	margin-top: 100px;
+	width: 400px;
+	height: 200px;
 
 }
 .ButtonBawah ul a{
+	
 	display: inline;
-	font-family: Maiandra GD;
+	font-family: Consolas;
 	font-size: 20px;
 	color: black;
-	margin-left: 25px;
+	margin-left: 5px;
+	
 }
-
-/*@media only screen and (max-width: 500px){
-.header ul #list li{
-width:100%;
-display: inline-block;
-float:left;
-}
-.header ul #list{
-
-}
-.header .form1{
-
-}
-}*/
