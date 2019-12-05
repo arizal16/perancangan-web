@@ -23,15 +23,20 @@ function validateForm() {
 			<h1 class="find">Find your own style!</h1>
 			</center>
 			<ul>
-				<a href="">PRIA</a></li>
-				<a href="">WANITA</a></li>
-				<a href="">ANAK-ANAK</a></li>
+				<div class="dropdown" style="margin-right: 25px;">
+  <button onclick="myFunction()" class="dropbtn">Menu Tuku-Tuku</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="index.html">Halaman Awal</a>
+    <a href="MasukAkun.html">Masuk Akun</a>
+    <a href="About.html">Tentang</a>
+  </div>
+</div>
 			</ul>
 		
 		
-			<form class="form10">
+			<!-- <form class="form10">
 				<input class="cari" type="text" name="cari" placeholder="Cari produk, tren , dan merek">
-				</form>
+				</form> -->
 			</div>
 <center>
 			<div class ="Logo3">
@@ -97,3 +102,24 @@ function validateForm() {
 	</div>
 </body>
 </html>
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
