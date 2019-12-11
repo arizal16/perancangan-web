@@ -4,6 +4,8 @@
 	<link rel="stylesheet" type="text/css" href="Catalouge.css">
 	<!-- <li><a href="responsive.css"></a></li> -->
 	<link rel="stylesheet" type="text/css" href="responsive.css">
+	<link rel="stylesheet" type="text/css" href="icon/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="icon/fonts/FontAwesome.otf">
 
 	<title>Catalouge</title>
 </head>
@@ -33,9 +35,9 @@
 		</div>
 		<center>
 			<div class ="Logo3">
-				<h3 class="produk"> PRODUK ORIGINAL</h3>
-				<h3 class="ribuan"> RIBUAN PRODUK FASHION</h3>
-				<h3 class="gratis"> GRATIS PENGEMBALIAN</h3>
+				<h3 class="produk"> <span><i class="fa fa-thumbs-up" aria-hidden="true"></i></span> PRODUK ORIGINAL</h3>
+				<h3 class="ribuan"> <span><i class="fa fa-thumbs-up" aria-hidden="true"></i></span> RIBUAN PRODUK FASHION</h3>
+				<h3 class="gratis"> <span><i class="fa fa-thumbs-up" aria-hidden="true"></i></span> GRATIS PENGEMBALIAN</h3>
 			</center>
 
 			<div class="konten">
@@ -50,7 +52,7 @@
 								<br>
 								<br>
 								<ul>
-									<a href="Detail 1.html">Detail Produk</a></li>
+									<a href="#!" class="detail__data__produk">Detail Produk</a></li>
 								</ul>
 							</div>
 						</div>
@@ -167,27 +169,99 @@
 			</center>
 		</div>
 	</body>
-	</html>
 
-	<script type="text/javascript" src="jquery.min.js"></script>
-	<script type="text/javascript">
-		$('.btn__loaddata').click(function () {
-			$.ajax({
 
-				url:"https://raw.githubusercontent.com/arizal16/perancangan-web/master/data/data.json",
-				type:"GET",
-				datatype: 'JSON',
-				data: {},
-				success: function(result){
-					var data = JSON.parse(result);
-					console.log(data.harga);
+	<div class="overlay--modal">
+		<div class="p--relative">
+			<div class="modal mt--5 mb--5">
+				<div class="modal-body">
 
-					$.each(data, function (n, elem) {
-						console.log('foto '+elem['foto']+' - judul '+elem['namabarang']+' - harga '+elem['harga']);
+					<div class="component--card-login bg--white-1 p--5 radius-10">
+
+						<form action="">
+
+							<img src="tas1.png" alt="Norway" style="width:35%;display: block; margin:0 auto;">
+
+							<div class="form--grup mt--0">
+								<label class="color--blue-2">Nama Barang</label>
+								<input type="text" value="RealTree" class="form--input-blue-2">
+							</div>
+
+
+							<div class="form--grup mt--0">
+								<label class="color--blue-2">Tipe Barang</label>
+								<input type="text" value="Accesories" class="form--input-blue-2">
+							</div>
+
+
+							<div class="form--grup mt--0">
+								<label class="color--blue-2">Harga Barang</label>
+								<input type="text" value="199.000" class="form--input-blue-2">
+							</div>
+
+
+							<div class="form--grup mt--0">
+								<label class="color--blue-2">Produksi</label>
+								<input type="text" value="Spanyol" class="form--input-blue-2">
+							</div>
+
+
+							<div class="form--grup mt--0 file--upload">
+								<label class="color--blue-2">Foto</label>
+								<input type="file" class="form--input-blue-2">
+							</div>
+
+							<div class="form--grup mt--0">
+								<label class="color--blue-2">Jumlah Stok</label>
+								<input type="text" value="5" class="form--input-blue-2">
+							</div>
+
+
+							<div class="form--grup mt--0">
+								<label class="color--blue-2">Kategori Produk</label>
+								<input type="text" value="Umum" class="form--input-blue-2">
+							</div>
+
+
+							<div class="form--grup mt--0">
+								<label class="color--blue-2">Tanggal Produksi</label>
+								<input type="text" value="12 Desember 2012" class="form--input-blue-2">
+							</div>
+
+							<button type="button" class="btn btn--blue-2 color--white-1 btn--login mx--auto d--inline-block mr--2">Beli</button>
+							<button type="button" class="btn btn--gray-1 color--blue-2 btn--login mx--auto d--inline-block modal--tutup">Tutup</button>
+						</form>
+					</div>
+
+					</html>
+
+					<script type="text/javascript" src="jquery.min.js"></script>
+					<script type="text/javascript">
+						$('.detail__data__produk').click(function () {
+							$('.overlay--modal').addClass('modal-show');
+						});
+						$('.modal--tutup').click(function () {
+							$('.overlay--modal').removeClass('modal-show');
+						});
+					</script>
+					<script type="text/javascript">
+						$('.btn__loaddata').click(function () {
+							$.ajax({
+
+								url:"https://raw.githubusercontent.com/arizal16/perancangan-web/master/data/data.json",
+								type:"GET",
+								datatype: 'JSON',
+								data: {},
+								success: function(result){
+									var data = JSON.parse(result);
+									console.log(data.harga);
+
+									$.each(data, function (n, elem) {
+										console.log('foto '+elem['foto']+' - judul '+elem['namabarang']+' - harga '+elem['harga']);
 						// appaend menamabah data di bagaian paling bawah
 						$('.show__all').append(`
 							<div class="polaroid1">
-							<img src="`+elem['foto']+`" alt="Norway" style="width:25%">
+								<img src="`+elem['foto']+`" alt="Norway" style="width:25%">
 								<div class="container">
 									<p><span class="thumbnail">`+elem['namabarang']+`</span> <br>`+elem['harga']+`</p>
 									<br>
@@ -201,12 +275,12 @@
 							`);
 					});
 
-				}
+								}
 
-			});
-		});
-	</script>
-	<script>
+							});
+						});
+					</script>
+					<script>
 /* When the user clicks on the button, 
 toggle between hiding and showing the dropdown content */
 function myFunction() {

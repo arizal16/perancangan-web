@@ -10,6 +10,8 @@ function validasi() {
         document.formlogin.password.focus();
         return false;
     }
+
+    window.location.href = "Catalouge.html";
     return alert('Login Berhasil!');
 
 
