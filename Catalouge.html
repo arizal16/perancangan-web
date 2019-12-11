@@ -206,11 +206,6 @@
 							</div>
 
 
-							<div class="form--grup mt--0 file--upload">
-								<label class="color--blue-2">Foto</label>
-								<input type="file" class="form--input-blue-2">
-							</div>
-
 							<div class="form--grup mt--0">
 								<label class="color--blue-2">Jumlah Stok</label>
 								<input type="text" value="5" class="form--input-blue-2">
@@ -238,10 +233,11 @@
 					<script type="text/javascript" src="jquery.min.js"></script>
 					<script type="text/javascript">
 						$('.detail__data__produk').click(function () {
-							$('.overlay--modal').addClass('modal-show');
+							$('.overlay--modal').addClass('showModal');
 						});
 						$('.modal--tutup').click(function () {
-							$('.overlay--modal').removeClass('modal-show');
+							$('.overlay--modal').addClass('hideModal');
+							$('.overlay--modal').removeClass('showModal');
 						});
 					</script>
 					<script type="text/javascript">
